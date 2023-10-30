@@ -1,0 +1,14 @@
+@import "https://unpkg.com/open-props";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url();
+  background-size: 100% 116%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  line-height: 0.5;
+}

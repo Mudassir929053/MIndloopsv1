@@ -1,0 +1,322 @@
+@import "https://unpkg.com/open-props";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/bg4.png);
+  background-size: 100% 116%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  line-height: 0.5;
+}
+a>img {
+  width: 6%;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+#img1{
+    width: 100%;
+    height: 100%;
+  }
+.droppable{
+  /* margin-top: 12%; */
+  display: flex;
+  flex-wrap: wrap;
+  font-size:2em;
+  line-height: 30px;
+  /* text-align: center; */
+  font-weight: bolder;
+  justify-content: space-between;
+  width: 13rem;
+  aspect-ratio: 1.25 / 1;
+  height: 8rem;
+  border-radius: var(--radius-2);
+  background-color: var(--gray-3);
+  border: 3px dashed var(--gray-8);
+  background-color:aliceblue;
+  place-content: center;
+  overflow: hidden;
+  /* white-space: nowrap; */
+ text-overflow:ellipsis;
+ /* word-break:keep-all; */
+ text-align: center;
+  }
+  
+@font-face {
+  font-family: "gooseberryJuice";
+  src: url("../fonts/GooseberryJuice.woff");
+}
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--size-4);
+
+  /* margin: var(--size-5); */
+}
+
+.draggable {
+  display: grid;
+  place-content: center;
+  width: 10rem;
+  aspect-ratio: 1.25 / 1;
+  height: 10rem;
+  border-radius: var(--radius-2);
+  /* background-color: var(--gray-3); */
+  animation: hithere 3s ease 1;
+
+}
+
+@keyframes hithere {
+  30% {
+    transform: scale(1.2);
+  }
+  40%,
+  60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.draggable {
+  cursor: move;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.draggable:hover {
+  opacity: 0.7;
+}
+
+.draggable.dragged {
+  opacity: 0.3;
+  cursor: default;
+}
+@media only screen and (max-width: 768px) {
+  .draggable {
+    width: 6rem;
+    height: 6rem;
+    aspect-ratio: unset;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .draggable {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .droppable {
+    width: 6rem;
+    height: 6rem;
+    aspect-ratio: unset;
+    font-size: 1.5em;
+  }
+  a>img {
+    width: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .droppable {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1em;
+  }
+  a>img {
+    width: 5px;
+  }
+}
+
+/* .droppable {
+  display: grid;
+  place-content: center;
+  width: 10rem;
+  aspect-ratio: 1.25 / 1;
+  height: 10rem;
+  border-radius: var(--radius-2);
+  background-color: var(--gray-3);
+  outline: 3px dotted var(--gray-10);
+  background-color: var(--gray-3);
+} */
+
+.droppable.droppable-hover {
+  outline-width: 4px;
+  background-color: var(--gray-6);
+}
+
+.droppable.dropped {
+  outline: 2px solid var(--gray-8);
+  color: #fff;
+}
+.modal {
+  position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      /* Center the modal horizontally */
+      align-items: center;
+      margin-top: 15%;
+}
+
+.modal-content {
+  background-image: url('../images/pop-up.png'); /* add the background image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 5rem;
+  /* decreased container size */
+  border-radius: 30px;
+  background-color:transparent;
+  border: none;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #EC9D36;
+  color: white;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: #fd1364;
+  color:white;
+  border: 2px solid #fd1364;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn-primary:hover {
+  background-color: #FCEADE;
+  color: #F8A5C2;
+}
+
+.btn-secondary:hover {
+  background-color:#FCEADE;
+  color:#F8A5C2;
+}
+@media screen and (max-width: 768px) {
+  .modal-content , .popup-content{
+    padding: 1rem;
+  }
+  
+  .btn {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal-body h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  .modal{
+    margin-top: 50%;
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-body h3 {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1;
+  }
+  .btn {
+    font-size: 0.5rem;
+  }
+}
+#ok-btn {
+  background-color: #fd1364;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 1.5rem 3.5rem; /* modified button size */
+  font-size: 1.2rem;
+  border-radius: 30px;
+  margin: 1rem; /* modified margin */
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#ok-btn:hover {
+  transform: scale(1.1);
+  background-color: #FCEADE;
+  color: #F8A5C2;
+}
+
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-image: url('../images/pop-up.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 11rem; /* modified padding */
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-content h3 {
+  font-size: 2rem; /* modified font size */
+  margin-bottom: 2rem; /* added margin */
+}
+
+@media (max-width: 768px) {
+  /* adjust styles for smaller screens */
+  .popup-content {
+    padding: 5rem;
+  }
+
+  .popup-content h3 {
+    font-size: 1rem;
+  }
+
+  #ok-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+}

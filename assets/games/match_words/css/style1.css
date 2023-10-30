@@ -1,0 +1,226 @@
+@import "https://unpkg.com/open-props";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../dynamic/images/background.png);
+  background-size: 100% 116%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  line-height: 0.5;
+}
+.droppable{
+  /* margin-top: 12%; */
+  display: flex;
+  flex-wrap: wrap;
+  font-size:180%;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bolder;
+  /* position: relative; */
+  }
+@font-face {
+  font-family: "gooseberryJuice";
+  src: url("../fonts/GooseberryJuice.woff");
+}
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--size-4);
+  margin: var(--size-5);
+}
+
+.draggable {
+  display: grid;
+  place-content: center;
+  width: 10rem;
+  aspect-ratio: 1.25 / 1;
+  height: 10rem;
+  border-radius: var(--radius-2);
+  background-color: var(--gray-3);
+  animation: hithere 3s ease 1;
+}
+
+@keyframes hithere {
+  30% {
+    transform: scale(1.2);
+  }
+  40%,
+  60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.draggable {
+  cursor: move;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.draggable:hover {
+  opacity: 0.7;
+}
+
+.draggable.dragged {
+  opacity: 0.3;
+  cursor: default;
+}
+@media only screen and (max-width: 768px) {
+  .draggable {
+    width: 6rem;
+    height: 6rem;
+    aspect-ratio: unset;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .draggable {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .droppable {
+    width: 6rem;
+    height: 6rem;
+    aspect-ratio: unset;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .droppable {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.droppable {
+  display: grid;
+  place-content: center;
+  width: 10rem;
+  aspect-ratio: 1.25 / 1;
+  height: 10rem;
+  border-radius: var(--radius-2);
+  background-color: var(--gray-3);
+  outline: 3px dotted var(--gray-10);
+  background-color: var(--gray-3);
+}
+
+.droppable.droppable-hover {
+  outline-width: 4px;
+  background-color: var(--gray-6);
+}
+
+.droppable.dropped {
+  outline: 2px solid var(--gray-8);
+  color: #fff;
+}
+.modal {
+  /* Set the modal to be fixed and cover the entire viewport */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center; /* Center the modal horizontally */
+  align-items: center; /* Center the modal vertically */
+  background-color: rgba(0, 0, 0, 0.257); 
+  /* Add a semi-transparent black background behind the modal */
+  animation: sparkle 2s 1;
+}
+.modal-dialog {
+  max-width: 500px;
+  margin-top: 20%;
+}
+.modal-content {
+  /* Set the size and style of the modal content */
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the buttons inside the modal */
+.modal-content button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style the text inside the modal */
+.modal-content p {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+/* Define the keyframes for the sparkle animation */
+
+
+.modal-content button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #fd1364;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.modal-content button:hover {
+  transform: scale(1.1);
+  background-color: #fceade;
+  color: #f8a5c2;
+}
+.level-btn {
+  background-color: #fd1364;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 10%;
+}
+
+.level-btn:hover {
+  transform: scale(1.1);
+}
+.btn:hover {
+  background-color: #FCEADE;
+  color: #F8A5C2;
+}
