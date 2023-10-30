@@ -1,0 +1,14 @@
+During this week, I successfully completed the assigned tasks as part of the Uniucreds project.
+
+1. This week, I fixed bugs in the committee account, improving its functionality and user experience.
+2. I made important enhancements to the lecture account's operations, resolving bugs and increasing efficiency.
+3. Both the committee and lecture accounts now have a responsive design and improved layout, offering a seamless user interface.
+4. I implemented notifications in the lecture account, enabling better communication within the system.
+5. I created a dedicated page for detailed notification viewing, providing easy access to important information.
+6. The committee account's badges now have better alignment, enhancing the visual appeal.
+7. I resolved issues with repeated comments and ensured proper alignment in both the committee and lecture accounts.
+8. Thorough testing was conducted on both accounts to ensure error-free and satisfying user experiences.
+
+Remarks:
+-------------
+Impressive work done to fix bugs, enhance functionality, improve user experience, implement notifications, and ensure responsiveness.

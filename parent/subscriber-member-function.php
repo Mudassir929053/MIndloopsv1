@@ -1,0 +1,100 @@
+<?php
+include '../dbconnect.php';
+/* ------------------------------------Add Employalibility program ------------------------------------ */
+
+if (isset($_POST['add_member'])) {
+  // Get the form data
+  $email = $_POST["email"];
+  $password = $_POST["password"];
+  $confirmPassword = $_POST["confirm-password"];
+  $mobile = $_POST['mobile'];
+  $registerAge = $_POST['registerAge'];
+  $grade = $_POST['grade'];
+  $user_name = 'student';
+  $user_type = 3;
+  $user_parent_id = $_POST['user_parent_id'];
+
+  // Validate the form data
+  if (empty($email) || empty($mobile)) {
+    echo "<script>alert('Please fill in all the fields.');
+								                  location.href = '$_SERVER[HTTP_REFERER]';</script>";
+    exit;
+  }
+
+  if (!empty($password) && $password != $confirmPassword) {
+    echo "<script>alert('The passwords do not match.');
+								                  location.href = '$_SERVER[HTTP_REFERER]';</script>";
+    exit;
+  }
+  // Validate the mobile number
+  if (strlen($mobile) !== 9) {
+
+    echo "<script>alert('Please enter a 9-digit mobile number.');
+								                  location.href = '$_SERVER[HTTP_REFERER]';</script>";
+    exit;
+  }
+  // Hash the password
+  $hashedPassword = !empty($password) ? password_hash($password, PASSWORD_BCRYPT) : '';
+
+  $sql = "INSERT INTO tb_users (u_email, u_name, u_contact, u_pwd, u_type, u_age, u_grade, u_parent_user_id) VALUES ('$email', '$user_name', '$mobile', '$hashedPassword', '$user_type', '$registerAge', '$grade', '$user_parent_id')";
+  
+  // ... previous code ...
+
+  // Execute the SQL query
+  if (mysqli_query($conn, $sql)) {
+    echo ("<script>window.location.href ='subscription-details.php'</script>");
+  } else {
+    echo "<script>alert('insert course learning details is not successful.');
+        location.href = '$_SERVER[HTTP_REFERER]';</script>";
+  }
+}
+
+/* ------------------------------------Add Employalibility program ------------------------------------ */
+/* ------------------------------------ Update Employee Details ------------------------------------ */
+
+if (isset($_POST['update_member'])) {
+  // Get the form data
+  $email = $_POST["update_email"];
+  $password = $_POST["update_password"];
+  $confirmPassword = $_POST["confirm-password"];
+  $mobile = $_POST['update_mobile'];
+  $registerAge = $_POST['registerAge'];
+  $grade = $_POST['grade'];
+  $user_id = $_POST['user_id'];
+
+  // Validate the form data
+  if (empty($email) || empty($mobile)) {
+    echo "<script>alert('Please fill in all the fields.');
+								                  location.href = '$_SERVER[HTTP_REFERER]';</script>";
+    exit;
+  }
+
+  if (!empty($password) && $password != $confirmPassword) {
+    echo "<script>alert('The passwords do not match.');
+								                  location.href = '$_SERVER[HTTP_REFERER]';</script>";
+    exit;
+  }
+  // Validate the mobile number
+  if (strlen($mobile) !== 9) {
+
+    echo "<script>alert('Please enter a 9-digit mobile number.');
+								                  location.href = '$_SERVER[HTTP_REFERER]';</script>";
+    exit;
+  }
+  // Hash the password
+  $hashedPassword = !empty($password) ? password_hash($password, PASSWORD_BCRYPT) : '';
+
+  $sql = "UPDATE tb_users SET u_email='$email', u_contact='$mobile', u_age='$registerAge', u_grade='$grade', u_pwd='$hashedPassword' WHERE u_id='$user_id'";
+  
+  // Execute the SQL query
+  if (mysqli_query($conn, $sql)) {
+    echo ("<script>window.location.href ='subscription-details.php'</script>");
+  } else {
+    echo "<script>alert('update employee details is not successful.');
+          location.href = '$_SERVER[HTTP_REFERER]';</script>";
+  }
+}
+
+/* ------------------------------------ Update Employee Details ------------------------------------ */
+
+?>

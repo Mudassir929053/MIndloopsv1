@@ -1,0 +1,68 @@
+.body {
+  background-image: url("../../assets/jigsaw_UI/Asset18.png");
+  /* background-size: 14.14px 14.14px; */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* margin-top: 16%; */
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.linkingQuestion {
+  display: flex;
+  font-size: 20px;
+  /* font-family : 'Century Gothic,CenturyGothic,AppleGothic,sans-serif'; */
+  position: relative;
+  justify-content: center;
+  /* position: fixed; */
+}
+
+#dragUL {
+  /* padding-left:0px; */
+  color: #F49E19;
+}
+
+#dropUL i {
+  pointer-events: none;
+}
+
+#dragUL li div {
+  margin-left: 10px;
+  float: right;
+}
+
+#dropUL li div {
+  margin-right: 10px;
+  float: left;
+}
+
+/* i.linked:before{    content:'\f057'  } */
+i {
+  margin-top: 20px;
+}
+
+li {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#container {
+  text-align: center;
+}
+
+#heading {
+  display: block;
+  margin-left: 8%;
+  margin-right: auto;
+  width: 100%;
+  /* margin-top: 1%; */
+  /* padding-bottom: 20px;    */
+  padding: 15px;
+  transform: translate(-0%, -5%);
+  text-align: right;
+}
+
+.flex-contianer {
+  display: flex;
+  justify-content: space-between;
+}
