@@ -1,0 +1,172 @@
+body {
+    background-image: url('../img/MindLOOPS_Resouces/Asset_4.jpg');
+    background-size: 120%;
+    background-position: top center;
+  }
+  .card.blurred .premium-button {
+    filter: none;
+}
+.blur-img1,
+.blur-text {
+    filter: blur(5px);
+    /* Adjust the blur value as needed */
+}
+.mindbooster-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 6%;
+}
+
+.blur-container {
+    position: relative;
+}
+
+.blur-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*backdrop-filter: blur(4px); /* Adjust the blur value as needed */
+}
+.center-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.no-click {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: inherit;
+}
+.img-fluid1 {
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+    /* margin-bottom: 5%; */
+}
+
+.box:hover {
+    transform: scale(1.05);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+.img-fluid1:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+.forum-item {
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  .forum-item>h5>a{
+    color:#555;
+  }
+
+  .forum-item a:hover {
+    color: #f4a214;
+  }
+
+  .forum-item .fa-infinity {
+    display: block;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ff6f00;
+  }
+
+  .forum-item h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+
+  .fa-newspaper-o {
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .thumbnail {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .view-button,
+  .download-button {
+    background-color: #ff6f00;
+    border-color: #ff6f00;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .view-button:hover,
+  .download-button:hover {
+    background-color: #ff9800;
+    color: #ffffff;
+  }
+  
+  .custom-img {
+    width: 100%;
+    /* Width set to 100% to occupy full available space */
+    height: auto;
+    /* Height set to auto to maintain aspect ratio */
+    object-fit: contain;
+    /* Maintain aspect ratio and fit the image within the container */
+    max-height: 200px;
+    /* Set a maximum height for the image */
+  }
+
+
+  .textAll {
+    padding-top: 2%;
+  }
+
+  .card {
+    color: teal
+  }
+
+  .nav-pills .nav-link.active {
+    background-color: #f0ad4e;
+    /* Change this to your desired warning color */
+    color: #ffffff;
+    /* Change this to the desired text color */
+  }
+
+  .nav-pills .nav-link {
+    border-radius: 0;
+    /* Remove rounded corners */
+    background-color: #f8f9fa;
+    /* Set background color */
+    color: #333333;
+    /* Set text color */
+    border: none;
+    /* Remove borders */
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    margin-right: 10px;
+    /* Add spacing between tabs */
+  }

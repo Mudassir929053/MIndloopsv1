@@ -1,0 +1,346 @@
+/* ****************forum topics***************************** */
+    body {
+        background-image: url('../assets/img/MindLOOPS_Resouces/Asset_4.jpg');
+        background-size: 100%;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    .btn-primary {
+        background-color: #E31568;
+        border-radius: 20px;
+        border: 0;
+        margin-right: 20px;
+        padding: 6px 15px;
+    }
+
+    .btn-secondary {
+        background-color: #fcfafd;
+        border-radius: 20px;
+        border: none;
+        color: black;
+        font-weight: 500;
+        padding: 6px 15px;
+
+    }
+
+    .avatar-sm {
+        width: 100%;
+        height: 80px;
+        font-size: 30px;
+        border: 1px solid black;
+    }
+
+    .initials {
+        line-height: 70px;
+        /* Adjust the line-height to vertically center the initials */
+    }
+
+    .forum-item ul {
+        list-style: none;
+        /* Remove default bullets */
+    }
+
+    .forum-item ul li::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 15px;
+
+    }
+
+    .bullet-red::before {
+        background-color: red;
+    }
+
+    .bullet-yellow::before {
+        background-color: yellow;
+    }
+
+    .bullet-lightblue::before {
+        background-color: lightblue;
+    }
+
+    .bullet-orange::before {
+        background-color: orange;
+    }
+
+    .list {
+        padding-bottom: 12px;
+    }
+
+    .list a {
+        color: black;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .list:hover {
+        transform: scale(0.9);
+        background-color: #f2f2f2;
+        /* Add a background color for the hover effect */
+    }
+
+    .list a:hover {
+        color: blue;
+    }
+
+    .dropdown-item {
+        display: block;
+        width: 50%;
+        padding: 0.25rem 1rem;
+        clear: both;
+        font-weight: 400;
+        color: #212529;
+        text-align: inherit;
+        text-decoration: none;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+    }
+
+    .dropdown-menu {
+        background-color: transparent;
+        min-width: 20px;
+        border: none;
+        top: auto;
+        bottom: 100%;
+    }
+
+
+    .custom-dropdown-button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .subtopics-header {
+        cursor: pointer;
+        text-decoration: underline;
+        color: blue;
+        margin-bottom: 10px;
+    }
+
+    .subtopics-list {
+        display: block;
+    }
+
+    @media (max-width: 767px) {
+        .subtopics-list {
+            display: none;
+        }
+    }
+
+    .container.mb-md-5 {
+        padding: 0 15px;
+        /* Add padding for responsiveness */
+    }
+
+    @media (max-width: 767px) {
+        .col-10.col-md-2.py-1 {
+            flex-basis: 100%;
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .row.py-5>.col {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .col.py-3.d-flex.justify-content-between {
+            flex-wrap: wrap;
+        }
+
+        .col.py-3.d-flex.justify-content-between>div {
+            flex-basis: 100%;
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+
+/* ***********************forum articles************************** */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    background-size: contain;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon i,
+.carousel-control-next-icon i {
+    color: #077bef;
+    font-size: 1.5rem;
+}
+
+.btn-rounded {
+    border-radius: 20px;
+    border: 2px solid;
+}
+
+.btn-pink {
+    border-color: #fa1478;
+}
+
+.btn-sky-blue {
+    border-color: skyblue;
+}
+
+.btn-yellow {
+    border-color: yellow;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    float: left;
+    margin-right: 10px;
+}
+
+.custom-dropdown {
+    border: none;
+}
+
+.dropdown-menu {
+    min-width: 0px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0% !important;
+}
+
+.dropdown-item {
+    padding: 0.25rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-item:hover {
+    background-color: none;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+}
+
+.forum-topics-list {
+    list-style: none;
+    padding: 0;
+}
+
+.forum-topic {
+    position: relative;
+    padding-left: 20px;
+}
+
+.pink::before {
+    background-color: #fa1478;
+}
+
+.skyblue::before {
+    background-color: skyblue;
+}
+
+.yellow::before {
+    background-color: yellow;
+}
+
+.forum-topic::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.forum-topics-list {
+    list-style: none;
+    padding: 0;
+}
+
+.forum-topic {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    /* Add space after each list item */
+}
+
+
+.forum-topics-list li a {
+    color: black;
+    text-decoration: none;
+    line-height: 1.2;
+    /* Adjust the line-height value as needed */
+}
+
+.forum-topics-list li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.pink::before {
+    background-color: #fa1478;
+}
+
+.skyblue::before {
+    background-color: skyblue;
+}
+
+.yellow::before {
+    background-color: yellow;
+}
+
+.forum-topic::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.forum-name {
+    color: red;
+}
+
+.hover-image:hover {
+    /* Add your hover effect styles here */
+    opacity: 0.8;
+    /* Additional styles such as transitions, transformations, etc. */
+
+
+}
+
+.hover-link:hover {
+    /* Add your hover effect styles here */
+    text-decoration: underline;
+
+    /* Additional styles such as color, background, etc. */
+}
+
+.hover-link1 {
+    /* Add your default styles here */
+    margin: 10px;
+    /* Additional styles such as color, background, etc. */
+}
+
+.hover-link1:hover {
+    /* Add your hover effect styles here */
+    background-color: #edd8a4;
+    margin: 8px;
+
+    /* Additional styles such as color, background, etc. */
+}

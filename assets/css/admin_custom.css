@@ -1,0 +1,115 @@
+#hideNav {
+    color: black;
+  }
+
+  #hideNav:hover {
+    color: gray;
+  }
+
+  /* from insert-tips.php */
+  #insertMagForm {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    background-color: azure;
+    border: solid 1px rgba(255, 255, 0, 0);
+    border-radius: 30px;
+  }
+
+  /* from insert-tips.php */
+  #m_id {
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+  }
+
+  /* from insert-tips.php */
+  #m_id:focus {
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+  }
+
+  /* from edit-tips.php */
+  #editMagForm {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    background-color: azure;
+    border: solid 1px rgba(255, 255, 0, 0);
+    border-radius: 30px;
+  }
+
+  .dataTables_filter {
+    text-align: right;
+  }
+
+  
+body {
+    background-image: url('../img/MindLOOPS_Resouces/Asset_4.jpg');
+    background-size: 110%;
+    background-position: top center;
+    /* min-height: 100vh; */
+  }
+  #insertLpForm {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    background-color: azure;
+    border: solid 1px rgba(255, 255, 0, 0);
+    border-radius: 30px;
+  }
+  #insertMbForm {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    background-color: azure;
+    border: solid 1px rgba(255, 255, 0, 0);
+    border-radius: 30px;
+  }
+
+  .level-one {
+    background-color: lightblue;
+  }
+
+  .level-two {
+    background-color: lightgrey;
+  }
+
+  .level-three {
+    background-color: antiquewhite;
+  }
+
+  .level-four {
+    background-color: lightyellow;
+  }
+
+  .level-five {
+    background-color: pink;
+  }
+
+  .level-six {
+    background-color: lightcyan;
+  }
+
+  #imgDivMagazine{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #editMbForm {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    background-color: azure;
+    border: solid 1px rgba(255, 255, 0, 0);
+    border-radius: 30px;
+  }

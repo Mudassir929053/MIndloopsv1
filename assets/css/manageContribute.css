@@ -1,0 +1,539 @@
+#contributionTableCSS {
+    height: fit-content;
+
+}
+
+.nav-link {
+    color: black;
+
+}
+
+.nav-link:hover {
+    color: black;
+    background-color: yellow;
+
+}
+
+.dataTables_length {
+    top: 20px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+#contributeTable_filter {
+    top: 20px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+#packageTable {
+    margin: auto auto
+}
+
+#packageTable_filter {
+    top: 20px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+#contributeTableWriter_filter {
+    top: 20px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+#contributeTableIllustrator_filter {
+    top: 20px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+#contributeTableCartoon_filter {
+    top: 20px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+#contributeTableComic_filter {
+    top: 20px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+#contributeTablePublished_filter {
+    top: 20px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+#contributeTableUnpublish_filter {
+    top: 20px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+#contributeTable_filter label input {
+    margin-left: 10px;
+}
+
+#packageTable_filter label input {
+    margin-left: 10px;
+}
+
+#contributeTableWriter_filter label input {
+    margin-left: 10px;
+}
+
+#contributeTableIllustrator_filter label input {
+    margin-left: 10px;
+}
+
+#contributeTableCartoon_filter label input {
+    margin-left: 10px;
+}
+
+#contributeTableComic_filter label input {
+    margin-left: 10px;
+}
+
+#contributeTablePublished_filter label input {
+    margin-left: 10px;
+}
+
+#contributeTableUnpublish_filter label input {
+    margin-left: 10px;
+}
+
+.dataTables_info {
+    text-align: center;
+}
+
+#contributeTable_paginate {
+    text-align: center;
+}
+
+#packageTable_paginate {
+    text-align: center;
+}
+
+#contributeTableWriter_paginate {
+    text-align: center;
+}
+
+#contributeTableIllustrator_paginate {
+    text-align: center;
+}
+
+#contributeTableCartoon_paginate {
+    text-align: center;
+}
+
+#contributeTableComic_paginate {
+    text-align: center;
+}
+
+#contributeTablePublished_paginate {
+    text-align: center;
+}
+
+#contributeTableUnpublish_paginate {
+    text-align: center;
+}
+
+.paginate_button {
+    position: relative;
+    top: 20px;
+    color: black;
+    border: 1px solid black;
+    background: #F7ECDE;
+    padding: 10px;
+    margin: 0 5px;
+
+    text-align: center;
+}
+
+#contributionTableCSS h2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+table.table td a {
+    color: #000;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+table.table td a.delete {
+    color: #E34724;
+}
+
+button.learn-more {
+    font-weight: 600;
+    color: #382b22;
+    text-transform: uppercase;
+    padding: 0.75em 1.25em;
+    margin-bottom: 10px;
+    background: #F7ECDE;
+    border: 1px solid #F5C7A9;
+    border-radius: 0.75em;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.1, 0.25), background 150ms cubic-bezier(0, 0, 0, 0);
+}
+
+.m-r-70 {
+    margin-right: 70px;
+}
+
+button.learn-more::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f9c4d2;
+    border-radius: inherit;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0, 1, 0.58, 1), box-shadow 150ms cubic-bezier(0, 1, 0.58, 1);
+}
+
+button.learn-more:hover {
+    background: #ffe9e9;
+    transform: translate(0, 0.25em);
+}
+
+button.learn-more:hover::before {
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+button.learn-more:active {
+    background: #ffe9e9;
+    transform: translate(0em, 0.75em);
+}
+
+button.learn-more:active::before {
+    transform: translate3d(0, 0, -1em);
+}
+
+
+/* ==========================================================================
+   #close btn
+   ========================================================================== */
+button.closeBtn {
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.75em 1.25em;
+    margin-bottom: 10px;
+    background: #D1512D;
+    border: 1px solid #F5C7A9;
+    border-radius: 0.75em;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.1, 0.25), background 150ms cubic-bezier(0, 0, 0, 0);
+}
+
+button.closeBtn::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f9c4d2;
+    border-radius: inherit;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0, 1, 0.58, 1), box-shadow 150ms cubic-bezier(0, 1, 0.58, 1);
+}
+
+button.closeBtn:hover {
+    background: #ffe9e9;
+    transform: translate(0, 0.25em);
+    color: #000
+}
+
+button.closeBtn:hover::before {
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+button.closeBtn:active {
+    background: #ffe9e9;
+    transform: translate(0em, 0.75em);
+}
+
+button.closeBtn:active::before {
+    transform: translate3d(0, 0, -1em);
+}
+
+
+/* ==========================================================================
+   #FORM
+   ========================================================================== */
+#container {
+    width: 100%;
+    height: 150vh;
+    top: 22%;
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    /* background-color: rgba(22, 22, 22, 0.5); */
+    /* complimenting your modal colors */
+}
+
+#container:target {
+    visibility: visible;
+    display: block;
+}
+
+.reveal-modal {
+    position: relative;
+    margin: 0 auto;
+}
+
+.input-icon {
+    position: absolute;
+    font-size: 18px;
+    color: #999;
+    left: 55%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    background: #e1e1e1;
+    margin: 0 auto;
+    width: 800px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 10%;
+    z-index: 41;
+    top: 18%;
+    padding: 30px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 800px) {
+    .form-popup {
+        width: 450px;
+    }
+
+    .input-icon {
+        left: 85%;
+        top: 70%;
+    }
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 700px;
+    padding: 10px;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+/* ==========================================================================
+   #SELECT2
+   ========================================================================== */
+.select--no-search .select2-search {
+    display: none !important;
+}
+
+.rs-select2 .select2-container {
+    width: auto !important;
+    outline: none;
+    background: #fafafa;
+    -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.rs-select2 .select2-container .select2-selection--single {
+    outline: none;
+    border: none;
+    height: 50px;
+    background: transparent;
+}
+
+.rs-select2 .select2-container .select2-selection--single .select2-selection__rendered {
+    line-height: 50px;
+    padding-left: 0;
+    color: #555;
+    font-size: 16px;
+    font-family: inherit;
+    padding-left: 22px;
+    padding-right: 50px;
+}
+
+.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow {
+    height: 50px;
+    right: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow b {
+    display: none;
+}
+
+.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow:after {
+    font-family: "Material-Design-Iconic-Font";
+    content: '\f2f9';
+    font-size: 24px;
+    color: #999;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.rs-select2 .select2-container.select2-container--open .select2-selection--single .select2-selection__arrow::after {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.select2-container--open .select2-dropdown--below {
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e0e0e0;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.select2-container--default .select2-results__option {
+    padding-left: 22px;
+}
+
+.radio-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.p-t-15 {
+    padding-top: 15px;
+}
+
+.radio-container input:checked~.checkmark {
+    background-color: #e5e5e5;
+}
+
+.radio-container input:checked~.checkmark:after {
+    display: block;
+}
+
+.radio-container .checkmark:after {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: red;
+}
+
+
+.checkmark {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}

@@ -1,0 +1,80 @@
+.modal.fade .modal-dialog.modal-dialog-zoom {
+  -webkit-transform: translate(0, 0) scale(.5);
+  transform: translate(0, 0) scale(.5);
+}
+
+.modal.show .modal-dialog.modal-dialog-zoom {
+  -webkit-transform: translate(0, 0) scale(1);
+  transform: translate(0, 0) scale(1);
+}
+
+.modal-dialog-centered {
+  display: flex;
+  justify-content: center;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.modal-body {
+  background-image: url(../global_modal_images/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #fcfafd;
+  /* padding: 250px 80px 150px 80px; */
+}
+
+.modal-title {
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.modal-subtitle {
+  font-weight: 300;
+  font-size: 1.8em;
+  line-height: 45px;
+}
+
+.btn-primary {
+  background-color: #E31568;
+  border-radius: 20px;
+  border: 0;
+  margin-right: 20px;
+  padding: 6px 15px;
+}
+
+.btn-secondary {
+  background-color: #fcfafd;
+  border-radius: 20px;
+  border: none;
+  color: black;
+  font-weight: 500;
+  padding: 6px 15px;
+}
+
+@media (max-width: 576px) {
+  .modal-body {
+    padding: 250px 35px 150px 25px;
+  }
+
+  .modal-title {
+    font-weight: bold;
+    font-size: 0.5rem;
+  }
+
+  .modal-subtitle {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 35px;
+  }
+ 
+}
+
+@media (max-width: 768px) {
+  .modal-body {
+    padding: 250px 35px 150px 25px;
+  }
+.img-fluid{
+ 
+  padding: 60px;
+}
+ 
+}

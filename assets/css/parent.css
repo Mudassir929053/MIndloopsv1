@@ -1,0 +1,996 @@
+.imagebackground {
+    background-image: url('../../assets/img/MindLOOPS_Resouces/Asset_4.jpg');
+    background-size: 110%;
+    background-position: top center;
+    
+}
+
+
+/* loops-- */
+.mindbooster-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+/* .premium {
+    filter: blur(5px);
+    opacity: 0.6;
+}
+.no-blur {
+    backdrop-filter: none;
+} */
+.blur-container {
+    position: relative;
+}
+.blur-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*backdrop-filter: blur(4px); /* Adjust the blur value as needed */
+}
+.blur-img1,
+.blur-text {
+    filter: blur(5px);
+    /* Adjust the blur value as needed */
+}
+.center-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.no-click {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: inherit;
+}
+#category2 {
+justify-content: center;
+}
+/* loops binding details */
+#magazine-hero {
+    background-image: none;
+    height: 150px;
+  }
+  #imgDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+/* loops lesson */
+.card.blurred img {
+    filter: blur(5px);
+}
+.card.blurred .premium-button {
+    filter: none;
+}
+.no-click {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: inherit;
+}
+/* view tips */
+.mindbooster-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 6%;
+}
+
+.blur-container {
+    position: relative;
+}
+/* video details */
+@media (max-width: 768px) {
+    body{
+      width: 100%;
+    }
+
+    #backBtn{
+      width: 40%;
+      margin-left: 10px;
+    }
+  }
+  /* discount */
+  .custom-img {
+    width: 100%;
+    /* Width set to 100% to occupy full available space */
+    height: auto;
+    /* Height set to auto to maintain aspect ratio */
+    object-fit: contain;
+    /* Maintain aspect ratio and fit the image within the container */
+    max-height: 200px;
+    /* Set a maximum height for the image */
+  }
+
+
+  .textAll {
+    padding-top: 2%;
+  }
+
+  .card {
+    color: teal
+  }
+
+  .nav-pills .nav-link.active {
+    background-color: #f0ad4e;
+    /* Change this to your desired warning color */
+    color: #ffffff;
+    /* Change this to the desired text color */
+  }
+  
+
+  .nav-pills .nav-link {
+    border-radius: 0;
+    /* Remove rounded corners */
+    background-color: #f8f9fa;
+    /* Set background color */
+    color: #333333;
+    /* Set text color */
+    border: none;
+    /* Remove borders */
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    margin-right: 10px;
+    /* Add spacing between tabs */
+  }
+/* profile tabs nav */
+  .nav-pills .nav-link1.active, .nav-pills .show>.nav-link1 {
+    color: #fff;
+    background-color: #0d6efd;
+}
+.nav-pills .nav-link1 {
+    border-radius: 0;
+    /* Remove rounded corners */
+    background-color: #f8f9fa;
+    /* Set background color */
+    color: #333333;
+    /* Set text color */
+    border: none;
+    /* Remove borders */
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    margin-right: 10px;
+    /* Add spacing between tabs */
+  }
+  .chartreuse {
+    background-color: #7fff00;
+}
+/* subscription */
+.img-fluid1 {
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .coupon-button {
+    /* Existing button styles */
+    width: 32%;
+    height: 32%;
+    border: none;
+    background-color: transparent;
+    background-image: url("../../assets/img/coupon_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    outline: none;
+    font-size: 30px;
+    border: none;
+    /* Remove the border */
+
+    /* Additional styles */
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .coupon-button::after {
+    content: "Tap to copy";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #777;
+    background-color: #f8f8f8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .coupon-button:focus {
+    /* outline: none !important; */
+    border: none;
+    /* Remove the border */
+    outline: none !important;
+    box-shadow: none;
+  }
+
+  .coupon-button:active {
+    border: none;
+    /* Remove the border */
+    outline: none !important;
+    box-shadow: none;
+  }
+
+  .modal-body .coupon-button {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Increase the size of the coupon image based on coupon code */
+  .coupon-button[data-coupon="ML50MS"] {
+    width: 150px;
+    /* Adjust the width as needed */
+    height: 150px;
+    /* Adjust the height as needed */
+  }
+
+  @media (max-width: 768px) {
+
+    /* Adjust the button styles for smaller devices */
+    .coupon-button {
+      width: 100%;
+      font-size: 100%;
+
+    }
+
+    .coupon-button::after {
+      bottom: -30px;
+      font-size: 12px;
+    }
+  }
+
+  .custom-modal .modal-content {
+    border: none;
+    background-color: transparent;
+  }
+
+  .custom-modal .modal-content:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  /* community */
+  .icon-large {
+    font-size: 20px;
+    /* Adjust the font size as needed */
+}
+
+.like-button,
+.dislike-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.accordion-button,
+.accordion-button:focus {
+    background-image: none !important;
+    background-color: white;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button:not(.collapsed) {
+    background-image: none;
+    background-color: white;
+    box-shadow: none;
+    color: black;
+}
+
+.dropdown-item {
+    display: block;
+    width: 50%;
+    padding:0;
+    clear: both;
+    border-radius: 52%;
+    font-weight: 400; 
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-menu {
+    background-color: transparent;
+    min-width: 20px;
+    border: none;
+    top: auto;
+    bottom: 100%;
+}
+
+.rounded-circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.custom-dropdown-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* community updates */
+#insertLpForm {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    background-color: azure;
+    border: solid 1px rgba(255, 255, 0, 0);
+    border-radius: 30px;
+}
+
+#m_id {
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+}
+
+#m_id:focus {
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+}
+
+body {
+    font-family: Arial;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/* community comment */
+.btn-primary {
+    background-color: #E31568;
+    border-radius: 20px;
+    border: 0;
+    margin-right: 20px;
+    padding: 6px 15px;
+}
+.btn-secondary {
+    background-color: #fcfafd;
+    border-radius: 20px;
+    border: none;
+    color: black;
+    font-weight: 500;
+    padding: 6px 15px;
+}
+.avatar-sm {
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
+    border: 1px solid black;
+}
+.initials {
+    line-height: 70px;
+    /* Adjust the line-height to vertically center the initials */
+}
+.forum-item1 ul {
+    list-style: none;
+    /* Remove default bullets */
+}
+.forum-item1 ul li::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.bullet-red::before {
+    background-color: red;
+}
+.bullet-yellow::before {
+    background-color: yellow;
+}
+.bullet-lightblue::before {
+    background-color: lightblue;
+}
+.bullet-orange::before {
+    background-color: orange;
+}
+.list {
+    padding-bottom: 12px;
+}
+.list a {
+    color: black;
+    transition: transform 0.3s ease-in-out;
+}
+.list:hover {
+    transform: scale(0.9);
+    background-color: #f2f2f2;
+    /* Add a background color for the hover effect */
+}
+.list a:hover {
+    color: blue;
+}
+.subtopics-header {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+    margin-bottom: 10px;
+}
+.subtopics-list {
+    display: block;
+}
+@media (max-width: 767px) {
+    .subtopics-list {
+        display: none;
+    }
+}
+.container.mb-md-5 {
+    padding: 0 15px;
+    /* Add padding for responsiveness */
+}
+@media (max-width: 767px) {
+    .col-10.col-md-2.py-1 {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    .row.py-5>.col {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .col.py-3.d-flex.justify-content-between {
+        flex-wrap: wrap;
+    }
+    .col.py-3.d-flex.justify-content-between>div {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+}
+/* forum */
+#magazine-hero{
+    background-image: none;
+    height: 150px;
+  }
+
+  #insertLpForm{
+          width:60%; 
+          margin-left:auto; 
+          margin-right:auto; 
+          padding:15px; 
+          background-color: azure;
+          border: solid 1px rgba(255,255,0,0);
+          border-radius: 30px;
+      }
+  
+      #m_id {
+          background-color:transparent;
+          border:0px;
+          outline: none;
+      }
+  body {font-family: Arial;}
+  
+  /* Style the tab */
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  /* editforum */
+  #imgDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #m_id:focus {
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+  }
+
+  body {
+    font-family: Arial;
+  }
+
+  /* Style the tab */
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  /* forum articles */
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+      background-color: black;
+      background-size: contain;
+      border-radius: 50%;
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .carousel-control-prev-icon i,
+  .carousel-control-next-icon i {
+      color: #077bef;
+      font-size: 1.5rem;
+  }
+
+  .btn-rounded {
+      border-radius: 20px;
+      border: 2px solid;
+  }
+
+  .btn-pink {
+      border-color: #fa1478;
+  }
+
+  .btn-sky-blue {
+      border-color: skyblue;
+  }
+
+  .btn-yellow {
+      border-color: yellow;
+  }
+
+  .circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: lightgrey;
+      float: left;
+      margin-right: 10px;
+  }
+
+  .custom-dropdown {
+      border: none;
+  }
+
+  .dropdown-menu {
+      min-width: 0px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 0% !important;
+  }
+
+  .dropdown-item {
+      padding: 0.25rem;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .dropdown-item:hover {
+      background-color: none;
+  }
+
+  .btn:focus {
+      outline: none;
+      box-shadow: none;
+      border: none;
+      background-color: transparent;
+  }
+
+  .forum-topics-list {
+      list-style: none;
+      padding: 0;
+  }
+
+  .forum-topic {
+      position: relative;
+      padding-left: 20px;
+  }
+
+  .pink::before {
+      background-color: #fa1478;
+  }
+
+  .skyblue::before {
+      background-color: skyblue;
+  }
+
+  .yellow::before {
+      background-color: yellow;
+  }
+
+  .forum-topic::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+  }
+
+  .forum-topics-list {
+      list-style: none;
+      padding: 0;
+  }
+
+  .forum-topic {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 10px;
+      /* Add space after each list item */
+  }
+
+
+  .forum-topics-list li a {
+      color: black;
+      text-decoration: none;
+      line-height: 1.2;
+      /* Adjust the line-height value as needed */
+  }
+
+  .forum-topics-list li a:hover {
+      color: red;
+      text-decoration: underline;
+  }
+
+  .pink::before {
+      background-color: #fa1478;
+  }
+
+  .skyblue::before {
+      background-color: skyblue;
+  }
+
+  .yellow::before {
+      background-color: yellow;
+  }
+
+  .forum-topic::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+  }
+
+  .forum-name {
+      color: red;
+  }
+
+  .hover-image:hover {
+      /* Add your hover effect styles here */
+      opacity: 0.8;
+      /* Additional styles such as transitions, transformations, etc. */
+
+
+  }
+
+  .hover-link:hover {
+      /* Add your hover effect styles here */
+      text-decoration: underline;
+
+      /* Additional styles such as color, background, etc. */
+  }
+
+  .hover-link1 {
+      /* Add your default styles here */
+      margin: 10px;
+      /* Additional styles such as color, background, etc. */
+  }
+
+  .hover-link1:hover {
+      /* Add your hover effect styles here */
+      background-color: #edd8a4;
+      margin: 8px;
+
+      /* Additional styles such as color, background, etc. */
+  }
+  /* forum comments */
+  .btn-primary {
+    background-color: #E31568;
+    border-radius: 20px;
+    border: 0;
+    margin-right: 20px;
+    padding: 6px 15px;
+}
+
+body {
+    font-family: "tommySoftRegular";
+    color: black;
+    background-image: rgb(164, 161, 161);
+    background-size: cover;
+    grid-template-rows: 1fr auto;
+}
+
+/* creative corner */
+.forum-item {
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    /* text-align: center; */
+    transition: background-color 0.3s ease;
+    }
+    
+    .forum-item:hover {
+    background-color: #f0f0f0;
+    }
+    
+    .forum-item .fa-infinity {
+    display: block;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ff6f00; /* Adjust the color to your preference */
+    }
+    
+    .forum-item h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #555;
+    }
+    
+    .forum-item a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+    }
+    
+    .forum-item a:hover {
+    color: #ff6f00; /* Adjust the hover color to your preference */
+    }
+    .fa-newspaper-o {
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+    }
+    /* creative corner details */
+
+    .container-fluid .img1 {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    .forum-item {
+        background-color: #f8f8f8;
+        border: 1px solid #e0e0e0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        /* text-align: center; */
+        transition: background-color 0.3s ease;
+    }
+/* crative corner forum topics */
+
+
+.comment-box {
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.comment-input {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.like-dislike-buttons {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+.like-button,
+.dislike-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.like-button:hover,
+.dislike-button:hover {
+    color: #ff6f00;
+}
+
+.submit-button {
+    background-color: #ff6f00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.submit-button:hover {
+    background-color: #e65c00;
+    animation: none;
+}
+.bg-comment-footer {
+    background-color: #f8f8f8;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.comment-actions {
+    display: flex;
+    /* justify-content:flex-start; */
+    align-items: center;
+    width: 100%;
+}
+
+.comment-actions .comment-info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.comment-actions .comment-author {
+    color: #555;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.comment-actions .comment-date {
+    color: #777;
+}
+
+.comment-actions .like-button,
+.comment-actions .dislike-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    transition: color 0.3s ease;
+
+}
+
+.comment-actions .like-button:hover,
+.comment-actions .dislike-button:hover {
+    color: #ff6f00;
+}
+
+.comment-actions .like-button i,
+.comment-actions .dislike-button i {
+    margin-right: 5px;
+}
+
+.comment-attachment img {
+    max-width: auto;
+    /* Adjust the maximum width as needed */
+    height: 400px;
+}
+
+.comment-attachment.pdf-attachment {
+    max-width: auto;
+    /* Adjust the maximum width for PDF attachments */
+    height: 400px;
+    /* Adjust the height for PDF attachments */
+}
+
+.comment-attachment iframe {
+    width: 100%;
+    height: 100%;
+}
+.content-wrapper {
+word-wrap: break-word;
+}
+
+.content-wrapper img,
+.content-wrapper video {
+max-width: 100%;
+height: auto;
+}
+/* community name */
+.card-text55 {
+    /* Your default styles for the card-text class */
+    color: black;
+    /* Add any other styles you want */
+  }
+
+  .card-text55:hover {
+    text-decoration: underline;
+    /* Additional styles when the cursor hovers over the element */
+  }

@@ -1,0 +1,188 @@
+body {
+    background-image: url('../img/MindLOOPS_Resouces/Asset_4.jpg');
+    background-size: 120%;
+    background-position: top center;
+  }
+.forum-item {
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.forum-item:hover {
+    background-color: #f0f0f0;
+}
+
+.forum-item .fa-infinity {
+    display: block;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ff6f00;
+}
+
+.forum-item h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.forum-item a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.forum-item a:hover {
+    color: #ff6f00;
+}
+
+.comment-box {
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.comment-input {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.like-dislike-buttons {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+.like-button,
+.dislike-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.like-button:hover,
+.dislike-button:hover {
+    color: #ff6f00;
+}
+
+.submit-button {
+    background-color: #ff6f00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.submit-button:hover {
+    background-color: #e65c00;
+    animation: none;
+}
+
+.fa-newspaper-o {
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.bg-comment-footer {
+    background-color: #f8f8f8;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.comment-actions {
+    display: flex;
+    /* justify-content:flex-start; */
+    align-items: center;
+    width: 100%;
+}
+
+.comment-actions .comment-info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.comment-actions .comment-author {
+    color: #555;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.comment-actions .comment-date {
+    color: #777;
+}
+
+.comment-actions .like-button,
+.comment-actions .dislike-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    transition: color 0.3s ease;
+
+}
+
+.comment-actions .like-button:hover,
+.comment-actions .dislike-button:hover {
+    color: #ff6f00;
+}
+
+.comment-actions .like-button i,
+.comment-actions .dislike-button i {
+    margin-right: 5px;
+}
+
+.comment-attachment img {
+    max-width: auto;
+    /* Adjust the maximum width as needed */
+    height: 400px;
+}
+
+.comment-attachment.pdf-attachment {
+    max-width: auto;
+    /* Adjust the maximum width for PDF attachments */
+    height: 400px;
+    /* Adjust the height for PDF attachments */
+}
+
+.comment-attachment iframe {
+    width: 100%;
+    height: 100%;
+}
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .container img {
+        max-width: 100%;
+        height: auto;
+    }
+}

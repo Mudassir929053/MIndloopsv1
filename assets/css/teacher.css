@@ -1,0 +1,603 @@
+body {
+    background-image: url('../../assets/img/MindLOOPS_Resouces/Asset_4.jpg');
+    background-size: 100%;
+  
+    /* font-family: 'GooseberryJuice'; */
+    background-position: top center;
+} 
+
+
+/* Manage Ready to go lessons */
+
+.textAll {
+    padding-top: 2%;
+  }
+
+
+/* Lessons.php */
+
+
+
+.card.blurred img {
+    filter: blur(5px);
+}
+
+
+.card.blurred .premium-button {
+    filter: none;
+}
+
+.center-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.no-click {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* loops-genaral_knowledge-details */
+
+#magazine-hero{
+    background-image: none;
+    height: 150px;
+  }
+
+  #imgDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /* view tips */
+
+  .mindbooster-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 6%;
+}
+
+.blur-container {
+    position: relative;
+}
+
+.blur-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*backdrop-filter: blur(4px); /* Adjust the blur value as needed */
+}
+
+.blur-img1,
+.blur-text {
+    filter: blur(5px);
+    /* Adjust the blur value as needed */
+}
+
+.center-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.no-click {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+/* video-details.php */
+
+
+
+@media (max-width: 768px) {
+    body {
+        /* width: 120%; */
+        background-size: 120%;
+        background-position: top center;
+    }
+}
+
+#diy {
+    color: #656565;
+    padding-left: 16em;
+}
+
+@media (max-width: 1200px) {
+    #diy {
+        padding-left: 10em;
+    }
+}
+
+@media (max-width: 1000px) {
+    #diy {
+        padding-left: 8em;
+    }
+}
+
+@media (max-width: 768px) {
+    #diy {
+        padding-left: 5em;
+    }
+}
+
+.containervideo {
+    max-width: 100%;
+}
+
+
+
+/* Discount.php */
+
+
+.textAll {
+    padding-top: 2%;
+  }
+
+  .card {
+    color: teal
+  }
+
+  .custom-img {
+    width: 100%;
+    /* Width set to 100% to occupy full available space */
+    height: auto;
+    /* Height set to auto to maintain aspect ratio */
+    object-fit: contain;
+    /* Maintain aspect ratio and fit the image within the container */
+    max-height: 200px;
+    /* Set a maximum height for the image */
+  }
+  .nav-pills .nav-link.active {
+    background-color: #f0ad4e;
+    /* Change this to your desired warning color */
+    color: #ffffff;
+    /* Change this to the desired text color */
+  }
+
+  .nav-pills .nav-link {
+    border-radius: 0;
+    /* Remove rounded corners */
+    background-color: #f8f9fa;
+    /* Set background color */
+    color: #333333;
+    /* Set text color */
+    border: none;
+    /* Remove borders */
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    margin-right: 10px;
+    /* Add spacing between tabs */
+  }
+
+
+  /* collect coupon */
+
+  .chartreuse {
+    background-color: #7fff00;
+}
+
+
+/* user-profile */
+.img-fluid1 {
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+    /* margin-bottom: 5%; */
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .coupon-button {
+    /* Existing button styles */
+    width: 32%;
+    height: 32%;
+    border: none;
+    background-color: transparent;
+    background-image: url("../../assets/img/coupon_icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    outline: none;
+    font-size: 30px;
+    border: none;
+    /* Remove the border */
+
+    /* Additional styles */
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .coupon-button::after {
+    content: "Tap to copy";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #777;
+    background-color: #f8f8f8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .coupon-button:focus {
+    /* outline: none !important; */
+    border: none;
+    /* Remove the border */
+    outline: none !important;
+    box-shadow: none;
+  }
+
+  .coupon-button:active {
+    border: none;
+    /* Remove the border */
+    outline: none !important;
+    box-shadow: none;
+  }
+
+  .modal-body .coupon-button {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Increase the size of the coupon image based on coupon code */
+  .coupon-button[data-coupon="ML50MS"] {
+    width: 150px;
+    /* Adjust the width as needed */
+    height: 150px;
+    /* Adjust the height as needed */
+  }
+
+  @media (max-width: 768px) {
+
+    /* Adjust the button styles for smaller devices */
+    .coupon-button {
+      width: 100%;
+      font-size: 100%;
+
+    }
+
+    .coupon-button::after {
+      bottom: -30px;
+      font-size: 12px;
+    }
+  }
+
+  .custom-modal .modal-content {
+    border: none;
+    background-color: transparent;
+  }
+
+  .custom-modal .modal-content:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  #packageContainer{padding-top: 0;}
+
+
+/* *****************************forum_details********************************** */
+
+#forum_details img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.forum-item {
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    /* text-align: center; */
+    transition: background-color 0.3s ease;
+}
+.forum-item:hover {
+    background-color: #f0f0f0;
+}
+.forum-item h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+.forum-item a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+.forum-item a:hover {
+    color: #ff6f00;
+    /* Adjust the hover color to your preference */
+}
+.fa-newspaper-o {
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* ******************************Add Article******************** */
+#insertLpForm {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    background-color: azure;
+    border: solid 1px rgba(255, 255, 0, 0);
+    border-radius: 30px;
+  }
+
+  #m_id {
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+  }
+
+  #m_id:focus {
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+  }
+
+
+  /* ***************************forum topics********************* */
+  
+  .forum-item .fa-infinity {
+    display: block;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ff6f00;
+}
+
+
+.comment-box {
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.comment-input {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.like-dislike-buttons {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+.like-button,
+.dislike-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.like-button:hover,
+.dislike-button:hover {
+    color: #ff6f00;
+}
+
+.submit-button {
+    background-color: #ff6f00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.submit-button:hover {
+    background-color: #e65c00;
+    animation: none;
+}
+
+.fa-newspaper-o {
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.bg-comment-footer {
+    background-color: #f8f8f8;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.comment-actions {
+    display: flex;
+    /* justify-content:flex-start; */
+    align-items: center;
+    width: 100%;
+}
+
+.comment-actions .comment-info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.comment-actions .comment-author {
+    color: #555;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.comment-actions .comment-date {
+    color: #777;
+}
+
+.comment-actions .like-button,
+.comment-actions .dislike-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    transition: color 0.3s ease;
+
+}
+
+.comment-actions .like-button:hover,
+.comment-actions .dislike-button:hover {
+    color: #ff6f00;
+}
+
+.comment-actions .like-button i,
+.comment-actions .dislike-button i {
+    margin-right: 5px;
+}
+
+.comment-attachment img {
+    max-width: auto;
+    /* Adjust the maximum width as needed */
+    height: 400px;
+}
+
+.comment-attachment.pdf-attachment {
+    max-width: auto;
+    /* Adjust the maximum width for PDF attachments */
+    height: 400px;
+    /* Adjust the height for PDF attachments */
+}
+
+.comment-attachment iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ************************To mindloops article**************** */
+
+
+.card-img-top {
+    height: 150px;
+    /* Adjust the height as per your requirements */
+    width: 100%;
+    /* Set the width to 100% to fill the container */
+    object-fit: cover;
+    /* Ensure the image fills the container */
+    object-position: center;
+    /* Center the image within the container */
+    border-radius: 8px;
+    /* Apply border-radius for rectangle shape */
+}
+
+
+
+/* **************************community article*********************** */
+.icon-large {
+    font-size: 20px;
+    /* Adjust the font size as needed */
+}
+
+.like-button,
+.dislike-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.accordion-button,
+.accordion-button:focus {
+    background-image: none !important;
+    background-color: white;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button:not(.collapsed) {
+    background-image: none;
+    background-color: white;
+    box-shadow: none;
+    color: black;
+}
+
+.dropdown-item {
+    display: block;
+    width: 50%;
+    padding:0;
+    clear: both;
+    border-radius: 52%;
+    font-weight: 400; 
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-menu {
+    background-color: transparent;
+    min-width: 20px;
+    border: none;
+    top: auto;
+    bottom: 100%;
+}
+
+.rounded-circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.custom-dropdown-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
