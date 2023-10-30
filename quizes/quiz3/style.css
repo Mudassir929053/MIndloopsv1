@@ -1,0 +1,268 @@
+/* Add some margin to the page and set a default font and colour */
+ 
+body {
+    /* margin: 30px; */
+    font-family: "Georgia", serif;
+    /* line-height: 1.8em; */
+    color: #333;
+    background-color: #dfd;
+  }
+  .bg{
+    /* margin-top: 1%; */
+    background-image:url('images/2.png');
+      background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+  }
+  
+  /* Give headings their own font */
+   
+  h1, h2, h3, h4 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+ 
+  /* Main content area */
+   
+  #content {
+    margin: 80px 70px;
+    text-align: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+ 
+   
+  /* Header/footer boxes */
+   
+ 
+   
+  /* Slots for final card positions */
+   
+  #cardSlots {
+    margin: 0 auto 3em auto;
+    background: rgb(193, 193, 223,0.00001);
+    /* float:inline-end; */
+    /* width: auto;
+    height: auto;  */
+  }
+   
+  /* The initial pile of unsorted cards */
+   
+  #cardPile {
+    margin: 0 auto;
+    background: rgba(191, 212, 196, 0);
+    float:inline-start;
+    width: auto;
+    height: auto;
+
+  }
+  .cardpile{   transform:scale(1.2,1.2);
+  }
+  
+   
+  #cardSlots, #cardPile {
+    width: 40%;
+    /* height: 50%; */
+    padding: .85em;
+    /* border: 2px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; */
+    /* -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+    box-shadow: 0 0 .3em rgba(0, 0, 0, .8); */
+  }
+   
+  /* Individual cards and slots */
+   
+  #cardPile div {
+    
+    height: 120px;
+    width: 120px;
+    /* background-color: #bbb; */
+    /* border-radius: 50%; */
+    /* display: inline-block; */
+    /* justify-items: center; */
+    margin: 10px 0 0 10px;
+    padding: .85em;
+    /* padding-top: 40px; */
+    padding-bottom: 0;
+   
+    /* float: left;
+    width: 42%;
+    height: 85%;
+    padding: .85em;
+    padding-top: 40px;
+    padding-bottom: 0;
+    border: 2px solid rgb(51, 51, 51);
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin: 10px 0 0 10px;
+    background: #fff;
+    justify-items: center; */
+  }
+   
+  #cardSlots div {
+    
+    height: 120px;
+    width: 120px;
+    /* background-color: #bbb; */
+    /* border-radius: 50%; */
+    /* display: inline-block; */
+    /* justify-items: center; */
+    margin: 10px 0 0 10px;
+    padding: .85em;
+    /* padding-top: 40px; */
+    padding-bottom: 0;
+   
+  }
+  #cardSlots div:nth-child(5) {
+    position: absolute;
+    left: 100px;
+    top: 180px;
+  }
+  #cardSlots div:nth-child(3) {
+    position: absolute;
+    left: 100px;
+    top: 320px;
+  }
+  #cardSlots div:nth-child(2) {
+    position: absolute;
+    left: 100px;
+    top: 460px;
+  }
+  #cardSlots div:nth-child(1) {
+    position: absolute;
+    left: 100px;
+    top: 600px;
+  }
+  #cardSlots div:nth-child(4) {
+    position: absolute;
+    left: 100px;
+    top: 730px;
+  }
+  #cardSlots div:nth-child(9) {
+    position: absolute;
+    right: 100px;
+    top: 180px;
+  }
+  #cardSlots div:nth-child(10) {
+    position: absolute;
+    right: 100px;
+    top: 320px;
+  }
+  #cardSlots div:nth-child(6) {
+    position: absolute;
+    right: 100px;
+    top: 460px;
+  }
+  #cardSlots div:nth-child(8) {
+    position: absolute;
+    right: 100px;
+    top: 600px;
+  }
+  #cardSlots div:nth-child(7) {
+    position: absolute;
+    right: 100px;
+    top: 730px;
+  }
+   
+  /*#cardSlots div:first-child, #cardPile div:first-child {
+    margin-left: 0;
+  }*/
+   
+  #cardSlots div.hovered {
+    background: #aaa;
+
+      transform:scale(1.2,1.2);
+  
+  }
+   
+  #cardSlots div {
+    /* border-style: dashed; */
+    /* background: rgba(20, 140, 209, 0.61); */
+    /* text-shadow: 0 0 3px rgb(7, 7, 7); */
+    background-image: url('images/balloon.png');
+    background-size: cover;
+    background-position:fixed;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    font-weight:  1em;
+    text-align: center;
+    padding-top: 40px;
+
+
+  }
+   
+  #cardPile div {
+    /* background: rgba(255, 153, 0, 0.568); */
+    /* background-image: url('balloon1.png'); */
+    background-size: cover;
+    background-position:fixed;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    /* text-shadow: 0 0 3px rgb(7, 7, 7); */
+    text-align: center;
+    font-weight: 900;
+
+
+  }
+   
+  #cardPile div.ui-draggable-dragging {
+    -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  }
+  #card1{
+    color: #333;
+    padding: 100px;
+  }
+   
+  /* Individually coloured cards */
+   
+  #card1.correct { background-image:url('images/twelve.png'); }
+  #card2.correct { background-image:url('images/thirty.png'); }
+  #card3.correct { background-image:url('images/ten.png'); }
+  #card4.correct { background-image:url('images/eightyfour.png'); }
+  #card5.correct { background-image:url('images/fiftyfive.png'); }
+  #card6.correct { background-image:url('images/sixtyone.png'); }
+  #card7.correct { background-image:url('images/fortytwo.png'); }
+  #card8.correct { background-image:url('images/seven.png'); }
+  #card9.correct { background-image:url('images/ninetyone.png'); }
+  #card10.correct { background-image:url('images/twenty.png'); }
+   
+   
+  /* "You did it!" message */
+  #successMessage {
+    position: absolute;
+    left: 580px;
+    top: 400px;
+    margin-top: 12%;
+    margin-left: 22%;
+    width: 0;
+    height: 0;
+    z-index: 100;
+    background: #dfd;
+    border: 2px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    padding: 20px;
+  }
+#heading img{ 
+  display: block;
+   margin-left: auto;
+margin-right: auto;
+width:60%;
+height: auto;
+/* margin-top: 12%; */
+/* padding-bottom: 20px;  */
+}
+

@@ -1,0 +1,47 @@
+
+
+ul {
+  display: inline-block;
+  font-size: 7vmin;
+  padding-left: 14vmin;
+}
+
+
+li.found {
+  text-decoration: line-through;
+}
+
+div#canvasContainer {
+  width: 100%;
+  display: inline-block;
+}
+
+ @media (min-aspect-ratio: 1/1) {
+   ul {
+    font-size: 4vmin;
+    padding-left: 7vmin;
+   }
+   
+   div#canvasContainer {
+    width: 50%;
+  }
+}
+
+/* timer */
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
+  
+  
