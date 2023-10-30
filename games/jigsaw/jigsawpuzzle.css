@@ -1,0 +1,280 @@
+.body {
+  background-image: url("../../assets/jigsaw_UI/Asset19.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow-y: auto;
+  background-attachment: fixed;
+}
+
+.linkingQuestion {
+  display: flex;
+  font-size: 20px;
+  position: relative;
+  justify-content: center;
+}
+
+#dragUL {
+  color: #F49E19;
+}
+
+#dropUL i {
+  pointer-events: none;
+}
+
+#dragUL li div {
+  margin-left: 10px;
+  float: right;
+}
+
+#dropUL li div {
+  margin-right: 10px;
+  float: left;
+}
+
+i {
+  margin-top: 20px;
+}
+
+li {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#container {
+  text-align: center;
+}
+
+#heading {
+  display: block;
+  margin-left: 8%;
+  margin-right: auto;
+  width: 100%;
+  padding: 15px;
+  transform: translate(-0%, -5%);
+  text-align: right;
+}
+
+#app1 {
+width: 100%;
+height: 70vh;
+display: flex;
+justify-content: flex-end;
+/* apply flex-direction: column for screens with width less than 768px */
+}
+
+@media screen and (max-width: 768px) {
+#app1 {
+justify-content: center;
+flex-direction: column;
+height: auto;
+}
+}
+
+
+
+/* #app canvas img{
+    border: 5px solid green;
+} */
+button {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 0 5px 0 0;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, .5);
+  color: #000;
+  font-size: 20px;
+  background: rgb(235, 235, 235);
+  transition: background-color ease-in .3s;
+}
+
+.level-btn {
+  /* background-color: orange; */
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.level-btn:hover {
+  transform: scale(1.1);
+}
+
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+canvas {
+  filter: brightness(90%);
+}
+
+
+
+
+
+/* Style the buttons inside the modal */
+
+
+/* Style the text inside the modal */
+
+
+/* Responsive */
+
+
+
+
+
+
+.flex-contianer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.butt {
+  margin-left: 65%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+#ok-btn {
+  background-color: #fd1364;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 45px;
+  /* increased button size */
+  font-size: 1.5rem;
+  /* increased font size */
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#ok-btn:hover {
+  transform: scale(1.1);
+  background-color: #FCEADE;
+  color: #F8A5C2;
+}
+
+#popup {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.popup-content {
+background-image: url('../../assets/jigsaw_UI/popup.png');
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+padding: 12rem;
+border-radius: 5px;
+}
+
+/* Add media queries for smaller screens */
+@media only screen and (max-width: 768px) {
+.popup-content {
+padding: 6rem;
+}
+}
+
+@media only screen and (max-width: 480px) {
+.popup-content {
+padding: 3rem; 
+}
+}
+
+
+h2 {
+  margin-top: 0;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+#play-again-btn {
+  background-color: #fd1364;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 45px;
+  /* increased button size */
+  font-size: 1.5rem;
+  /* increased font size */
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+#play-again-btn1 {
+  
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 45px;
+  /* increased button size */
+  font-size: 1.5rem;
+  /* increased font size */
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+#play-again-btn:hover {
+  transform: scale(1.1);
+  background-color: #FCEADE;
+  color: #F8A5C2;
+}
+
+#myModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  /* Center the modal horizontally */
+  align-items: center;
+
+}
+
+.pop-content {
+  background-image: url('../../assets/jigsaw_UI/popup.png');
+  background-size: contain;
+  /* cover the background image */
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 12rem;
+  /* decreased container size */
+  border-radius: 5px;
+  /* text-align: center; */
+
+}
+
+h2 {
+  margin-top: 0;
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Mindloops</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="../assets/img/MindLOOPS_Resouces/mindloops_icon_192x192.png" rel="icon">
+    <link href="../assets/img/MindLOOPS_Resouces/mindloops_icon_192x192.png" rel="apple-touch-icon">
+
+    <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet">
+    <link href="
+    https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/package.css" rel="stylesheet">
+    <link href="../assets/css/emailForm.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header id="head"></header>
+    <div id="packageDetailsMessage"></div>
+
+    <!-- ======= Our Clients Section ======= -->
+    <section id="clients" class="clients">
+
+        <div class="container" data-aos="fade-up">
+            <div id="subscriptionTable" style="margin-top: 20%;">
+
+            </div>
+            <a class="btn btn-success" style="margin-bottom:10px; display: none;" id="addNewEmailBtn"><i
+                    class="fa fa-plus"></i>
+                Add New User</a>
+
+            <!-- <div id="newEmailForm">
+                <div style="display:flex;width:100%;">
+                    <form id="newEmail" style='display:none'>
+                        <p>Make sure the email you enter has already been registered.</p>
+                        <div style="width:47%;">
+                            <p>EMAIL</p>
+                            <input name="scode" style="display:none">
+                            <input name="numUser" style="display:none">
+                            <input name="email">
+                        </div>
+                        <br>
+                        <button type="submit" class="btn" id="addNewEmailSubmitBtn" style="background-color: yellow;
+                        border: none;
+                        padding: 15px;
+                        border-radius: 8px;
+                        color: black;">
+                            Submit&gt;&gt;</button>
+                    </form>
+                </div>
+            </div> -->
+
+
+            <div class="back"></div>
+            <div class="registration-form" id="newEmailForm">
+
+                <form id="newEmail" style='display:none'>
+                    <header>
+                        <h1>Enter the user email</h1>
+                        <p>Note that the email should be registered first.</p>
+                    </header>
+                    <div class="input-section email-section">
+                        <input name="scode" style="display:none">
+                        <input name="numUser" style="display:none">
+                        <input class="email" type="email" name="email" placeholder="ENTER E-MAIL HERE"
+                            autocomplete="off" />
+                        <div class="animated-button"><span class="icon-paper-plane"><i
+                                    class="fa fa-envelope-o"></i></span><span class="next-button email"><button
+                                    type="submit" style="background:none;border:none;padding:0;outline:none;"><i
+                                        class="fa fa-arrow-up"></i></button></span></div>
+                    </div>
+                </form>
+            </div>
+
+
+
+            <div class="grid-container" id="packageTables" style="margin-top: 10%;">
+
+                <div class="grid-child purple" id="leftGrid">
+                    <h5>Family Package</h5>
+                    <p>Discover fun ways to learn and explore with your family at the tip of the finger.</p>
+                    <button id="discoverFamilyP"
+                        onclick="window.location.href='../subscription/familyPackagePage.html';">Discover Family
+                        Package</button>
+
+                    <div class="parent">
+                        <img class="image1" src="../assets/img/MindLOOPS_Resouces/MicrosoftTeams-image (3).png" />
+                        <img class="image2" src="../assets/img/MindLOOPS_Resouces/Mak_1.png" />
+                        <img class="image3" src="../assets/img/MindLOOPS_Resouces/Aliff_1_green.png" />
+                        <img class="image4" src="../assets/img/MindLOOPS_Resouces/Adik_2.png" />
+                    </div>
+                </div>
+
+                <div class="grid-child green" id="rightGrid">
+                    <h5>Educators Package</h5>
+                    <p>Discover fun ways to learn and explore with your family at the tip of the finger.</p>
+                    <button id="discoverSingleP"
+                        onclick="window.location.href='../subscription/singlePackagePage.html';">Discover
+                        Educators Package</button>
+
+                    <div class="parent">
+                        <img class="image1" src="../assets/img/MindLOOPS_Resouces/Asset 13.png" />
+                        <img class="image3" src="../assets/img/MindLOOPS_Resouces/Asset 11.png" />
+                        <img class="image2" src="../assets/img/MindLOOPS_Resouces/Asset 12.png" />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Our Clients Section -->
+    <footer id="foot"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script> -->
+
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/gallery/glightbox.min.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/swiper/gallery/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.15.349/build/pdf.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+    <script>
+
+        $("#addNewEmailBtn").click(function (e) {
+            event.preventDefault();
+            var formData = $(this).serialize();
+            console.log(formData);
+            $.ajax({
+                type: "POST",
+                url: "checkUsersSubscription.php",
+                data: {
+                    "scode": $('input[name=scode]').val(),
+                    "numUser": $('input[name=numUser]').val()
+                },
+                dataType: "json",
+                success: function (data) {
+                    console.log(data);
+                    if (data.status == "success") {
+                        $('#newEmail').show();
+                    }
+                },
+                error: function (xhr, resp, text) {
+                    $('#packageDetailsMessage').fadeIn();
+                    $('#packageDetailsMessage').html('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button>' + xhr.responseText + '</div>');
+                },
+            });
+        });
+        $('.email').on("change keyup paste",
+            function () {
+                if ($(this).val()) {
+                    $('.icon-paper-plane').addClass("next");
+                } else {
+                    $('.icon-paper-plane').removeClass("next");
+                }
+            }
+        );
+        $("#newEmail").submit(function (event) {
+            event.preventDefault();
+            var formData = $(this).serialize();
+            console.log(formData);
+
+            $.ajax({
+                type: "POST",
+                url: "addNewEmail.php",
+                data: formData,
+                dataType: "json",
+                success: function (data) {
+                    console.log(data);
+                    if (data.status == "success") {
+                        window.location.href = "teacher_subscribe.html";
+                    } else {
+                        alert("Something went wrong.");
+                    }
+                },
+                error: function (xhr, resp, text) {
+                    $('#packageDetailsMessage').fadeIn();
+                    $('#packageDetailsMessage').html('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button>' + xhr.responseText + '</div>');
+                },
+            });
+        });
+
+        $(document).ready(function () {
+            $.ajax({
+                type: "get",
+                url: "checkSubscriptionStatus.php",
+                success: function (output, status, xhr) {
+                    console.log(output);
+                    var result = $.parseJSON(output);
+                    if (result.login == true) {
+                        $.ajax({
+                            type: "get",
+                            url: "../commonPHP/topNavBarLoggedIn.php",
+                            dataType: "html",
+                            success: function (html) {
+                                $('#head').append(html);
+
+                            },
+                        });
+                    } else {
+                        alert("Please log in to access this page.");
+                        window.location.href = "../login_and_register/login.php";
+                    }
+                    if (result.subscribedStatus == true) {
+
+                        $('#packageTables').hide();
+                        $("#addNewEmailBtn").show();
+                        //if (result.subscriptionPackageType == "2") {
+                        //single package no need table
+                        $('#subscriptionTable').html(result.table);
+                        //}
+                        $('input[name=scode]').val(result.scid);
+                        $('input[name=numUser]').val(result.num);
+
+                        $('#subscriptionDetails').append(result.subscriptionDetails);
+                        console.log(result.subscriptionDetails);
+
+                    } else {
+                        $('#subscriptionTable').hide();
+                        alert("You should subscribe to get unlimited access!");
+                    }
+                },
+                error: function (xhr, resp, text) {
+                    $('#packageDetailsMessage').fadeIn();
+                    $('#packageDetailsMessage').html(xhr.responseText);
+                },
+            });
+
+            $.ajax({
+                type: "get",
+                url: "../commonPHP/footer_admin.php",
+                dataType: "html",
+                success: function (html) {
+                    $('#foot').append(html);
+                },
+            });
+            $('#tbList').DataTable({
+                "bPaginate": false,
+                "bLengthChange": false,
+                "bFilter": false,
+                "bInfo": false,
+                "bAutoWidth": false
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

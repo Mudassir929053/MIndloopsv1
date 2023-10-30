@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Mindloops</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="../assets/img/MindLOOPS_Resouces/mindloops_icon_192x192.png" rel="icon">
+    <link href="../assets/img/MindLOOPS_Resouces/mindloops_icon_192x192.png" rel="apple-touch-icon">
+
+    <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet">
+    <link href="
+    https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+
+    <!-- Icons font CSS-->
+    <link href="../assets/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Vendor CSS-->
+    <link href="../assets/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="../assets/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <!-- Main CSS-->
+    <link href="../assets/css/main.css" rel="stylesheet" media="all">
+
+</head>
+
+<!--<body>-->
+<!--    admin-->
+<header id="head"></header>
+<div class="page-wrapper bg-gra-02 p-t-130 p-b-100">
+    <div class="wrapper wrapper--w680">
+        <div class="card card-4">
+            <div class="card-body">
+                <div id="packageDetailsMessage"></div>
+                <h2 class="title">Create New Package</h2>
+                <form id="addNewPackage" method="POST" action="addPackage.php" enctype="multipart/form-data">
+                    <div class="row row-space">
+                        <div class="col-6">
+                            <div class="input-group">
+                                <label class="label">Package Name</label>
+                                <input class="input--style-4" type="text" name="package_name" placeholder="XX Package">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group">
+                                <label class="label">Package Price (RM)</label>
+                                <input class="input--style-4" type="text" name="package_price" placeholder="0.00">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-space">
+                        <div class="col-6">
+                            <div class="input-group">
+                                <label class="label">Duration</label>
+                                <!-- <div class="input-group-icon">
+                                        <input class="input--style-4 js-datepicker" type="text" name="birthday">
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div> -->
+                                <div class="input-group">
+                                    <input class="input--style-5" type="number" name="package_duration" value="1"
+                                        style="width:15%">
+
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="duration_type" id="duration_type">
+                                            <option disabled="disabled" selected="selected">Choose option
+                                            </option>
+                                            <option value="day">Day(s)</option>
+                                            <option value="month">Month(s)</option>
+                                            <option value="year">Year(s)</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group">
+                                <label class="label">Number of User</label>
+                                <!-- <div class="p-t-15">
+                                        <label class="radio-container m-r-70">Male
+                                            <input type="radio" checked="checked" name="gender">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Female
+                                            <input type="radio" name="gender">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
+                                <input class="input--style-4" type="text" name="package_userNum" placeholder="Minimum 1"
+                                    min="1">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-space" id="descriptionPlace">
+                        <div class="col-12">
+                            <div class="input-group">
+                                <label class="label">Description 1</label>
+                                <input class="input--style-4" type="text" name="desc1" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group">
+                                <label class="label">Description 2</label>
+                                <input class="input--style-4" type="text" name="desc2">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group">
+                                <label class="label">Description 3</label>
+                                <input class="input--style-4" type="text" name="desc3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-space">
+                        <!-- <div class="input-group"> -->
+                        <div class="col-12">
+                            <label class="label">Type of Package</label>
+                        </div>
+                        <div class="col-6">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="package_type" id="package_type">
+                                    <option disabled="disabled" selected="selected">Choose option</option>
+                                    <option value="2">Family Package</option>
+                                    <option value="1">Single Package</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                    <br>
+                    <div class="row row-space">
+                        <!-- <div class="input-group"> -->
+                        <div class="col-12">
+                            <label for="p_img" class="label">Package Image *(.png / .jpg / .jpeg)</label>
+
+                        </div>
+                        <div class="col-12">
+                            <input type="file" class="input--style-4" name="p_img" id="p_img"
+                                accept="image/png, image/jpeg, image/jpg" required>
+                        </div>
+                        <p>** Note: It is better to upload image with height not more than 400px.</p>
+
+                        <!-- <div class="col-6">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="package_type" id="package_type">
+                                    <option disabled="disabled" selected="selected">Choose option</option>
+                                    <option value="2">Family Package</option>
+                                    <option value="1">Single Package</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div> -->
+                        <!-- </div> -->
+                    </div>
+                    <div class="p-t-15">
+                        <button class="btn btn--radius-2 " id="btn--addNewPackage" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="foot"></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Jquery JS-->
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<!-- Vendor JS-->
+<script src="../assets/vendor/select2/select2.min.js"></script>
+<!-- Template Main JS File -->
+<script src="./assets/js/main.js"></script>
+<script src="../assets/vendor/datepicker/moment.min.js"></script>
+<script src="../assets/vendor/datepicker/daterangepicker.js"></script>
+<script src="https://malsup.github.io/jquery.form.js"></script>
+<!-- Main JS-->
+<script src="../assets/js/global.js"></script>
+<script>
+
+    $(function () {
+        var inputs = $('#descriptionPlace').find(':input');
+        $(document).on("change", inputs, function () {
+            var inputs = $('#descriptionPlace').find(':input');
+            var allGood = true;
+            var count = 0;
+            $(inputs).each(function () {
+                if ($(this).val() == "") {
+                    allGood = false;
+                    return false;
+                }
+                count++;
+            });
+            if (allGood) {
+                count++;
+                $(" <div class='col-12'>" +
+                    "<div class='input-group'>" +
+                    "<label class='label'>Description " + count + "</label>" +
+                    "<input class='input--style-4' type='text' name='desc" + count + "'>" +
+                    "</div>" +
+                    "</div>").appendTo("#descriptionPlace");
+            }
+        });
+    });
+    /* 
+        $("#addNewPackage").ajaxForm(function (event) {
+            event.preventDefault();
+            var formData = $(this).serialize();
+            
+            console.log(formData);
+            $.ajax({
+                type: "POST",
+                url: "addPackage.php",
+                data: formData,
+                dataType: "json",
+                success: function (data) {
+                    if (data.status == 'success') {
+                        window.location.href = "managePackage.php";
+                    } else {
+                        $('#packageDetailsMessage').fadeIn();
+                        $('#packageDetailsMessage').html(data.status);
+                    }
+                },
+                error: function (xhr, resp, text) {
+                    console.log(xhr.responseText);
+                    $('#packageDetailsMessage').fadeIn();
+                    $('#packageDetailsMessage').html('<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button>Please enter all fields marked with a (*)</div>');
+                },
+            });
+        }); */
+    $(function () {
+        $('#addNewPackage').ajaxForm({
+            /* beforeSubmit: ShowRequest, */
+            success: SubmitSuccesful,
+            error: AjaxError
+        });
+    });
+
+    function ShowRequest(formData, jqForm, options) {
+        var queryString = $.param(formData);
+        alert('BeforeSend method: \n\nAbout to submit: \n\n' + queryString);
+        return true;
+    }
+
+    function AjaxError() {
+        alert("An AJAX error occured.");
+    }
+
+    function SubmitSuccesful(responseText, statusText) {
+        /* alert("SuccesMethod:\n\n" + responseText); */
+        location.href = "managePackage.html";
+    }
+    $(document).ready(function () {
+
+        $.ajax({
+            type: "get",
+            url: "../commonPHP/adminNavBar.php",
+            dataType: "html",
+            success: function (html) {
+                $('#head').append(html);
+            },
+        });
+        $.ajax({
+            type: "get",
+            url: "../commonPHP/footer_admin.php",
+            dataType: "html",
+            success: function (html) {
+                $('#foot').append(html);
+            },
+        });
+
+    });
+
+</script>
+</body>
+
+</html>

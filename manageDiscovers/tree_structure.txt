@@ -1,0 +1,19 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 8251-AD8D
+
+ Directory of C:\xampp\htdocs\mindloopsv2\manageDiscovers
+
+20-07-2023  09:05    <DIR>          .
+19-07-2023  15:40    <DIR>          ..
+12-07-2023  14:15               621 delete.php
+12-07-2023  14:15             1,997 edit-backend.php
+20-07-2023  08:57             3,661 edit.php
+12-07-2023  14:15             1,720 insert-backend.php
+20-07-2023  08:57             2,655 insert.php
+20-07-2023  08:58             3,882 manage.php
+20-07-2023  09:05                 0 tree_structure.txt
+               7 File(s)         14,536 bytes
+
+     Total Files Listed:
+               7 File(s)         14,536 bytes
+               2 Dir(s)  75,483,193,344 bytes free
