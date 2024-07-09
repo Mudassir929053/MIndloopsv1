@@ -64,6 +64,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit();
         } else {
             // Failed to insert comment
+            // Failed to insert comment
+            // Failed to insert comment
+            // Failed to insert comment
+            // Failed to insert comment
+            
             echo "<script>
                     alert('Failed to submit comment');
                     window.location.href = 'forum_topics.php?forum_id=$forum_id&forumtopic_id=$forumtopic_id';
