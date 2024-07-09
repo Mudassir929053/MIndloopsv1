@@ -6,6 +6,13 @@ if (!session_id()) {
 if ($_SESSION["userType"] != '2') {
   echo "<script> window.location.replace('../../login_and_register/login.php'); </script>";
   // header("../login_and_register/login.php");
+  // header("../login_and_register/login.php");
+  // header("../login_and_register/login.php");
+  // header("../login_and_register/login.php");
+  // header("../login_and_register/login.php");
+  // header("../login_and_register/login.php");
+  // header("../login_and_register/login.php");
+  
 }
 
 include("../../dbconnect.php");
