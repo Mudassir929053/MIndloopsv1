@@ -61,7 +61,7 @@ if (!$result) {
                 $rowReadUser = $checkuserrow->fetch_object();
                 $get_userID = $rowReadUser->u_name;
 
-                // Fetch categories from the database
+                // Fetch categories from the DB
                 $query = "SELECT DISTINCT v_type FROM tb_videos WHERE v_audience = '$get_userID' order by v_type";
                 $result = mysqli_query($conn, $query);
 
