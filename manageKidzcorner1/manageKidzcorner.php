@@ -28,7 +28,7 @@ if (!session_id()) {
   }
 </style>
 <main id="main">
-  <!-- 
+  <!--  
     <div id="magazine-hero">
     </div> -->
   <!-- <img id="magazine-img" src="./assets/img/MindLOOPS_Resouces/Asset_4.jpg" alt="" height="300px" class="col-lg-12"> -->
