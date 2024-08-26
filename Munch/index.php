@@ -5,7 +5,7 @@ include("../commonPHP/topNavBarLoggedIn.php");
 // include("_discover.php");
 ?>  
 <!DOCTYPE html>  
-<html lang="en-us">
+<html lang="en-us"> 
 
 
  
