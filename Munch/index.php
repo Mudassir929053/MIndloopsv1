@@ -9,7 +9,7 @@ include("../commonPHP/topNavBarLoggedIn.php");
 
 
 
-<body style="text-align: center; padding: 0; border: 0; margin: 0; background-image: url(../assets/img/MindLOOPS_Resouces/Asset_4.jpg);">
+<body style="text-align: center; padding: 0; border: 0; margin: 0; background-image: url(../assets/img/MindLOOPS_Resouces/Asset_4.jpg);"> 
   <br>
   <canvas id="unity-canvas" width=1280 height=720 style="width: 1280px; height: 720px; background: #231F20"></canvas>
   <script src="Build/Munch.loader.js"></script>
