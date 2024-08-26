@@ -4,7 +4,7 @@ require_once("../commonPHP/head.php");
 include("../commonPHP/topNavBarLoggedIn.php");
 // include("_discover.php");
 ?>
-<!DOCTYPE html> 
+<!DOCTYPE html>  
 <html lang="en-us">
 
 
