@@ -3,7 +3,7 @@ require_once("../commonPHP/head.php");
 // include("../commonPHP/topNavBarCheck.php"); 
 include("../commonPHP/topNavBarLoggedIn.php");
 // include("_discover.php");
-?> 
+?>  
 <!DOCTYPE html>  
 <html lang="en-us">
 
