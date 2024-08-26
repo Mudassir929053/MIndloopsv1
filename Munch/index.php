@@ -1,6 +1,6 @@
 <?php
 require_once("../commonPHP/head.php");
-// include("../commonPHP/topNavBarCheck.php");
+// include("../commonPHP/topNavBarCheck.php"); 
 include("../commonPHP/topNavBarLoggedIn.php");
 // include("_discover.php");
 ?>
