@@ -22,7 +22,7 @@ if (!isset($_COOKIE['userType']) && (isset($no_redirect))) {
 
 <?php
 }
-?>
+?> 
 
 <?php if ($user_type == 'Student') { ?>
   <!-- Modal For Student -->
