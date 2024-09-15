@@ -23,7 +23,7 @@ if (!isset($_COOKIE['userType']) && (isset($no_redirect))) {
 <?php
 }
 ?> 
-
+ 
 <?php if ($user_type == 'Student') { ?>
   <!-- Modal For Student -->
   <div class="modal fade" id="globalModal" tabindex="-1" role="dialog" aria-labelledby="globalModalLabel" aria-hidden="true">
