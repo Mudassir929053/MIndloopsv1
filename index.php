@@ -2,7 +2,7 @@
     session_start();
     // var_dump($_SESSION['userType']);
     // ++!exit(); 
-    if(isset($_SESSION['userType'])){ 
+    if(isset($_SESSION['userType'])){  
         if($_SESSION['userType']=='3'){   
         header('location: index/index.php');  
     }     
