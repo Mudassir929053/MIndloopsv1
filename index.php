@@ -16,6 +16,6 @@
         header("location: public/index.php");
     }
     exit;  
-    }
+    } 
     header("location: public/index.php");
 ?>   
