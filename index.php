@@ -15,7 +15,7 @@
     else{
         header("location: public/index.php");  
     } 
-    exit;  
+    exit;   
     }  
     header("location: public/index.php"); 
 ?>   
