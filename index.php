@@ -9,7 +9,7 @@
     else if($_SESSION['userType']=='2'){  
         header('location: ./Teacher/magazine/index.php'); 
     } 
-    else if($_SESSION['userType']=='4'){  
+    else if($_SESSION['userType']=='4'){   
         header('location: ./parent/magazine/index.php');
     }
     else{
