@@ -13,7 +13,7 @@
         header('location: ./parent/magazine/index.php');
     }
     else{
-        header("location: public/index.php");
+        header("location: public/index.php"); 
     } 
     exit;  
     }  
