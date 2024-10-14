@@ -7,7 +7,7 @@ if(!session_id())
     header ('location: ../login_and_register/login.php');
   }    }  
  
-  include("../commonPHP/adminNavBar.php"); 
+  include("../commonPHP/adminNavBar.php");  
   ?>
 
   <main id="main"> 
