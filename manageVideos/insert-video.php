@@ -12,7 +12,7 @@ if(!session_id())
 
   <main id="main">
 
-   
+    
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
 
