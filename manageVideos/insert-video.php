@@ -10,7 +10,7 @@ if(!session_id())
   include("../commonPHP/adminNavBar.php"); 
   ?>
 
-  <main id="main">
+  <main id="main"> 
 
    
     <section id="portfolio-details" class="portfolio-details">
