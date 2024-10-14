@@ -5,7 +5,7 @@ if(!session_id())
   if($_SESSION["userType"]!='1')
   {
     header ('location: ../login_and_register/login.php');
-  }    } 
+  }    }  
  
   include("../commonPHP/adminNavBar.php"); 
   ?>
