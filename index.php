@@ -12,7 +12,7 @@
     else if($_SESSION['userType']=='4'){
         header('location: ./parent/magazine/index.php');
     }
-    else{
+    else{ 
         header("location: public/index.php");  
     }  
     exit;
