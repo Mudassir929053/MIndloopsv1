@@ -1,4 +1,4 @@
-  <?php
+   <?php
     session_start();
     // var_dump($_SESSION['userType']);
     // ++!exit();
